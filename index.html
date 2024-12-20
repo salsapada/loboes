@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lobões: Lendas do Mundo</h1>
+        <p>Aqui você encontra os lobões mais estilosos da internet!</p>
+    </header>
+
+    <section id="galeria">
+        <figure>
+            <img class="imagem-lobo" src="will.jpg" alt="Lobo premium romântico e conquistador" onclick="abrirVideo('amaral.mp4')">
+            <figcaption>
+                <p>Lobo premium, o mais romântico e conquistador das lendas.</p>
+                <strong>LOBO ENTUPIDOR DE NARIZ E ORELHA</strong><br>
+                <button class="audio-btn" onclick="playAudio('alfa.mp3')">Reproduzir Áudio</button><br>
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="imagem-lobo" src="luis.jpg" alt="Menor lobo, mas o mais estiloso e sedutor" onclick="abrirVideo('morais.mp4')">
+            <figcaption>
+                <p>Menor lobo, porém o mais estiloso e sedutor. Ele é como manteiga no pão!</p>
+                <strong>LOBÃO DO CAPA</strong>
+                <button class="audio-btn" onclick="playAudio('lu.mp3')">Reproduzir Áudio</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="imagem-lobo" src="luciano.jpg" alt="Lobo mais malvado e traiçoeiro" onclick="abrirVideo('eneas.mp4')">
+            <figcaption>
+                <p>Lobo mais malvado, ele é a traição em pessoa. Um péssimo lobo!</p>
+                <strong>LOBÃO CHUPADOR</strong>
+                <button class="audio-btn" onclick="playAudio('luci.mp3')">Reproduzir Áudio</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="imagem-lobo" src="mi.jpg" alt="O lobo mais masoquista de todos" onclick="abrirVideo('pereira.mp4')">
+            <figcaption>
+                <p>O lobo mais masoquista de todos. Ele apanha mais que novato em treino!</p>
+                <strong>LOBÃO MASOQUISTA</strong>
+                <button class="audio-btn" onclick="playAudio('maso.mp3')">Reproduzir Áudio</button>
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Modal de vídeo -->
+    <div id="modal-video" class="hidden">
+        <div class="modal-conteudo">
+            <video id="video-modal" controls>
+                <source id="video-source" type="video/mp4">
+            </video>
+            <button id="close-video" onclick="fecharVideo()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
